@@ -227,7 +227,7 @@
 
 
 (display "\n  nock 8:\n")
-(test (nock (cell subject
+  (test (nock (cell subject
             (cell 8 (cell
             (cell 4 (cell 0 13))
             (cell 0 1)))))                ; .*(subject [8 [4 0 13] [0 1]])
@@ -235,7 +235,7 @@
 
 
 (display "\n  nock 9:\n")
-(test (nock (cell (cell 68
+  (test (nock (cell (cell 68
             (cell 4 (cell 0 3)))
             (cell 9 (cell 2 (cell
             (cell 0 3) (cell 0 2))))))    ; .*([68 4 0 3] [9 2 [0 3] [0 2]])
@@ -243,7 +243,7 @@
                                           ; B-)
 
 (display "\n  nock 10:\n")
-(test (nock (cell (cell 11 22)
+  (test (nock (cell (cell 11 22)
             (cell 10 (cell
             (cell 2 (cell 0 1))
             (cell 0 1)))))                ; .*([11 22] [10 [2 [0 1]] 0 1])
@@ -251,13 +251,13 @@
 
 
 (display "\n  nock 11:\n")
-(test (nock (cell 0 (cell 11 (cell
+  (test (nock (cell 0 (cell 11 (cell
             (cell (cell 1 100)
                   (cell 1 200))
             (cell 1 300)))))              ; .*(0 [11 [[1 100] [1 200]] [1 300]])
       300)                                ; 300
 
-(test (nock (cell subject
+  (test (nock (cell subject
             (cell 11
             (cell 69 (cell 0 1)))))       ; .*(subject [11 69 [0 1]])
       subject)                            ; 69
