@@ -23,6 +23,3 @@ This repo also includes ```rkt_noun.py``` which is just a script for converting 
 use:
 * ```$python rkt_noun.py "[[11 22] [33 44] 55]"```
 * ```(cell (cell 11 22) (cell (cell 33 44) 55))```
-
-<hr>
-
